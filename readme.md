@@ -1,5 +1,9 @@
 ## HaasBot
 
+### Setup
+
+`pipenv install`
+
 ### Running
 
 `pipenv run python bot.py`
