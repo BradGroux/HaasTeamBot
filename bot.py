@@ -1,3 +1,4 @@
+import datetime
 import os
 
 import praw
@@ -12,6 +13,20 @@ class HaasBot(object):
         self.client_token = os.getenv("CLIENT_TOKEN", "")
         self.client_secret = os.getenv("CLIENT_SECRET", "")
 
+    def lookup_current_race(self):
+        test = datetime.date(2019, 4, 28).isoformat()
+        tomorrow = (datetime.date.today() + datetime.timedelta(days=1)).isoformat()
+
+        r = requests.get("http://ergast.com/api/f1/current.json")
+        races = r.json()["MRData"]["RaceTable"]
+
+        for race in races["Races"]:
+            if race["date"] in [test, tomorrow]:
+                return race
+
+    def get_qualifying_results(self, race_round):
+        pass
+
     def post_to_subreddit(self):
         # First set up auth
         reddit = praw.Reddit(
@@ -25,9 +40,8 @@ class HaasBot(object):
             title="Hello from Gunther Steiner (Test Post)",
             selftext="Test Post from HaasBot",
         )
-        print(s.url)
+        return s.url
 
 
-if __name__ == "__main__":
-    h = HaasBot()
-    h.post_to_subreddit()
+b = HaasBot()
+b.lookup_current_race()
