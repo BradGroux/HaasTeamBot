@@ -6,7 +6,7 @@ import requests
 import requests.auth
 
 
-class HaasBot(object):
+class HaasBotController(object):
     def __init__(self):
         self.reddit_username = os.getenv("REDDIT_USERNAME", "")
         self.reddit_password = os.getenv("REDDIT_PASSWORD", "")
@@ -40,8 +40,3 @@ class HaasBot(object):
             title=message, selftext="Test Post from HaasBot"
         )
         return s.url
-
-
-b = HaasBot()
-message = "Hello from Lewis Hamilton!"
-b.post_to_subreddit(message)

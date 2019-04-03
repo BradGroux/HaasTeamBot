@@ -6,5 +6,7 @@ class ThreadTemplate(object):
         self.filename = filename
         self.env = Environment(loader=PackageLoader("haasbot", "templates"))
 
-    def load(self, template_name):
-        template = env.get_template(template_name)
+    def load(self, **template_vars):
+        template = self.env.get_template(self.filename)
+        thread_file = template.render(template_vars)
+        return thread_file
