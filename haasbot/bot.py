@@ -27,7 +27,7 @@ class HaasBot(object):
     def get_qualifying_results(self, race_round):
         pass
 
-    def post_to_subreddit(self):
+    def post_to_subreddit(self, message):
         # First set up auth
         reddit = praw.Reddit(
             client_id=self.client_token,
@@ -37,11 +37,11 @@ class HaasBot(object):
             user_agent="python:HaasBot:v0.1.0",
         )
         s = reddit.subreddit("HaasTeamBot").submit(
-            title="Hello from Gunther Steiner (Test Post)",
-            selftext="Test Post from HaasBot",
+            title=message, selftext="Test Post from HaasBot"
         )
         return s.url
 
 
 b = HaasBot()
-b.lookup_current_race()
+message = "Hello from Lewis Hamilton!"
+b.post_to_subreddit(message)
