@@ -5,7 +5,7 @@ import praw
 import requests
 import requests.auth
 
-import template
+from . import template
 
 
 class HaasBotController(object):
@@ -15,15 +15,16 @@ class HaasBotController(object):
         self.client_token = os.getenv("CLIENT_TOKEN", "")
         self.client_secret = os.getenv("CLIENT_SECRET", "")
 
-    def lookup_current_race(self):
-        today = datetime.date.today().isoformat()
-        tomorrow = (datetime.date.today() + datetime.timedelta(days=1)).isoformat()
+        # Some convenience date information
+        self.today = datetime.date.today().isoformat()
+        self.tomorrow = (datetime.date.today() + datetime.timedelta(days=1)).isoformat()
 
+    def lookup_current_race(self):
         r = requests.get("http://ergast.com/api/f1/current.json")
         races = r.json()["MRData"]["RaceTable"]
 
         for race in races["Races"]:
-            if race["date"] in [today, tomorrow]:
+            if race["date"] in [self.today, self.tomorrow]:
                 return race
 
     def get_qualifying_results(self, race_round):
@@ -39,10 +40,12 @@ class HaasBotController(object):
             user_agent="python:HaasBot:v0.1.0",
         )
 
-        parsed_template = template
+        parsed_template = template.load_template_file(
+            template_file, test_variable="Hello World"
+        )
 
-        title = "Test HaasBot Post"
+        title = f"Test HaasBot Post: {self.today}"
         s = reddit.subreddit("HaasTeamBot").submit(
-            title=title, selftext="Test Post from HaasBot"
+            title=title, selftext=parsed_template
         )
         return s.url
