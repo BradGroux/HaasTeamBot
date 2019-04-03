@@ -4,9 +4,9 @@
 
 `pipenv install`
 
-### Running
+### Running Tests
 
-`pipenv run python bot.py`
+`pipenv run python -m unittest`
 
 ### Required Environment Variables
 
