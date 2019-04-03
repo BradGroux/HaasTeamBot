@@ -1,12 +1,8 @@
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, PackageLoader
 
 
-class ThreadTemplate(object):
-    def __init__(self, filename):
-        self.filename = filename
-        self.env = Environment(loader=PackageLoader("haasbot", "templates"))
-
-    def load(self, **template_vars):
-        template = self.env.get_template(self.filename)
-        thread_file = template.render(template_vars)
-        return thread_file
+def load_template_file(template_name, **template_vars):
+    env = Environment(loader=PackageLoader("haasbot", "templates"))
+    template = env.get_template(template_name)
+    thread_file = template.render(template_vars)
+    return thread_file
