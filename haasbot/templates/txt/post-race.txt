@@ -1,0 +1,63 @@
+|FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2019|
+|:-:|
+|Fri 15 Mar - Sun 17 Mar|
+|Melbourne|
+
+# [SESSION TIMES](http://f1calendar.com/)
+
+| Session | UTC | EST | CST | MST | PST |
+|-:|-:|-:|:-|-:|-:|
+| Free Practice 1 | 15 MAR 12:00 | 14 MAR 21:00 | 14 MAR 20:00 | 14 MAR 19:00 | 14 MAR 18:00 |
+| Free Practice 2 | 15 MAR 16:00 | 15 MAR 01:00 | 15 MAR 00:00 | 14 MAR 23:00 | 13 MAR 22:00 |
+| Free Practice 3 | 16 MAR 14:00 | 15 MAR 23:00 | 15 MAR 22:00 | 15 MAR 21:00 | 15 MAR 20:00 |
+| Qualifying | 16 MAR 17:00 | 16 MAR 02:00 | 16 MAR 01:00 | 16 MAR 00:00 | 15 MAR 23:00 |
+| Grand Prix | 17 MAR 13:10 | 17 MAR 02:10 | 17 MAR 01:10 | 17 MAR 12:10 | 16 MAR 23:10 | 
+
+---
+
+# [MELBOURNE GRAND PRIX CIRCUIT](https://www.formula1.com/en/racing/2019/Australia.html#circuit)
+
+---
+
+### LENGTH: 5.303 km (3.295 mi)
+
+### DISTANCE: 58 laps, 307.574 km (191.117 mi)
+
+### LAP RECORD: [](#de) Michael Schumacher, Ferrari, 2004, 1:24.125
+
+### 2018 POLE SETTER: [](#gb) Lewis Hamilton, Mercedes, 1:21.164
+
+### 2018 FASTEST LAP: [](#au) Daniel Ricciardo, Red Bull Racing-TAG Heuer, 1:25.945
+
+### 2018 WINNER: [](#de) Sebastian Vettel, Ferrari
+
+---
+
+# [RACE RESULTS](https://www.formula1.com/en/racing/2019/Australia.html#circuit/Timetable.html)
+
+|Pos.|No.|Driver|Team|Laps|Time/Retired|Fastest Lap|Points|
+|:-:|:-:|:-|:-|:-:|-:|-:|:-:|
+|**1**|**77**|**Valtteri Bottas**|**Mercedes**|**58**|**1:25:27.325**|**1:25.580**|**26**|
+|2|44|Lewis Hamilton|Mercedes|58|+20.886s|1:26.057|18|
+|3|33|Max Verstappen|Red Bull Racing Honda|58|+22.520s|1:26.256|15|
+|4|5|Sebastian Vettel|Ferrari|58|+57.109s|1:27.954|12|
+|5|16|Charles Leclerc|Ferrari|58|+58.230s|1:26.926|10|
+|6|20|Kevin Magnussen|Haas Ferrari|58|+87.156s|1:28.182|8|
+|7|27|Nico Hulkenberg|Renault|57|+1 lap|1:28.444|6|
+|8|7|Kimi Räikkönen|Alfa Romeo Racing Ferrari|57|+1 lap|1:28.270|4|
+|9|18|Lance Stroll|Racing Point BWT Mercedes|57|+1 lap|1:27.568|2|
+|10|26|Daniil Kvyat|Scuderia Toro Rosso Honda|57|+1 lap|1:27.448|1|
+|11|10|Pierre Gasly|Red Bull Racing Honda|57|+1 lap|1:27.229|0|
+|12|4|Lando Norris|McLaren Renault|57|+1 lap|1:28.555|0|
+|13|11|Sergio Perez|Racing Point BWT Mercedes|57|+1 lap|1:28.485|0|
+|14|23|Alexander Albon|Scuderia Toro Rosso Honda|57|+1 lap|1:28.188|0|
+|15|99|Antonio Giovinazzi|Alfa Romeo Racing Ferrari|57|+1 lap|1:28.479|0|
+|16|63|George Russell|Williams Mercedes|56|+2 laps|1:28.713|0|
+|17|88|Robert Kubica|Williams Mercedes|55|+3 laps|1:29.284|0|
+|NC|8|Romain Grosjean|Haas Ferrari|29|DNF|1:28.462|0|
+|NC|3|Daniel Ricciardo|Renault|28|DNF|1:29.848|0|
+|NC|55|Carlos Sainz|McLaren Renault|9|DNF|1:30.899|0|
+
+---
+
+Please keep the conversation civil, and pass on word of the /r/HaasF1Team subreddit to your friends and fellow fans!
