@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
+import unittest
 
 from .context import haasbot
 import haasbot.template as t
-
-import unittest
 
 
 class TemplateLoadTests(unittest.TestCase):

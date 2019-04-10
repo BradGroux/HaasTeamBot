@@ -3,7 +3,7 @@ import os
 
 import praw
 
-from . import template
+from . import template, race
 
 
 class HaasBotController(object):
@@ -19,7 +19,10 @@ class HaasBotController(object):
         # Some convenience date information
         self.today = datetime.date.today().isoformat()
 
-    def post_race_thread(self, template_file):
+    def get_race_data(self):
+        return data.get_race_data()
+
+    def post_race_thread(self, race_type):
         # First set up auth
         reddit = praw.Reddit(
             client_id=self.client_token,
@@ -29,9 +32,7 @@ class HaasBotController(object):
             user_agent="python:HaasBot:v0.1.0",
         )
 
-        parsed_template = template.load_template_file(
-            template_file, test_variable="Hello World"
-        )
+        parsed_template = template.load_template_file(template_file, kwargs)
 
         title = f"Test HaasBot Post: {self.today}"
         s = reddit.subreddit("HaasTeamBot").submit(

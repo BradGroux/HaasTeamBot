@@ -9,6 +9,7 @@ black = "*"
 requests = "*"
 jinja2 = "*"
 freezegun = "*"
+maya = "*"
 
 [requires]
 python_version = "3.7"
