@@ -1,4 +1,4 @@
-|{{ race_name_full }}|
+|{{ race_name }}|
 |:-:|
 |{{ race_date_range_string }}|
 |{{ race_location }}|
@@ -7,31 +7,13 @@
 
 | Session | UTC | EST | CST | MST | PST |
 |-:|-:|-:|:-|-:|-:|
-| Free Practice 1 | 15 MAR 12:00 | 14 MAR 21:00 | 14 MAR 20:00 | 14 MAR 19:00 | 14 MAR 18:00 |
-| Free Practice 2 | 15 MAR 16:00 | 15 MAR 01:00 | 15 MAR 00:00 | 14 MAR 23:00 | 13 MAR 22:00 |
-| Free Practice 3 | 16 MAR 14:00 | 15 MAR 23:00 | 15 MAR 22:00 | 15 MAR 21:00 | 15 MAR 20:00 |
-| Qualifying | 16 MAR 17:00 | 16 MAR 02:00 | 16 MAR 01:00 | 16 MAR 00:00 | 15 MAR 23:00 |
-| Grand Prix | 17 MAR 13:10 | 17 MAR 02:10 | 17 MAR 01:10 | 17 MAR 12:10 | 16 MAR 23:10 | 
+| Grand Prix | {% for time in start_all_timezones %} {{ time }} | {% endfor %}
 
 ---
 
-# [MELBOURNE GRAND PRIX CIRCUIT](https://www.formula1.com/en/racing/2019/Australia.html#circuit)
-# [{{ race_name | upper}}]({{ race_url }}#circuit)
+## [{{ circuit_name | upper}}]({{ race_url }})
 
 ---
 
-### LENGTH: 5.303 km (3.295 mi)
-
-### DISTANCE: 58 laps, 307.574 km (191.117 mi)
-
-### LAP RECORD: [](#de) Michael Schumacher, Ferrari, 2004, 1:24.125
-
-### 2018 POLE SETTER: [](#gb) Lewis Hamilton, Mercedes, 1:21.164
-
-### 2018 FASTEST LAP: [](#au) Daniel Ricciardo, Red Bull Racing-TAG Heuer, 1:25.945
-
-### 2018 WINNER: [](#de) Sebastian Vettel, Ferrari
-
----
 
 Please keep the conversation civil, and pass on word of the /r/HaasF1Team subreddit to your friends and fellow fans!
