@@ -19,6 +19,10 @@ class HaasBotController(object):
         # Some convenience date information
         self.today = datetime.date.today().isoformat()
 
+    def check_if_time_to_post(self):
+        """This function checks the race schedule to determine if it is the correct time to post a race thread"""
+        pass
+
     def post_race_thread(self, race_type=None):
         # First set up auth
         reddit = praw.Reddit(
@@ -43,8 +47,10 @@ class HaasBotController(object):
         for timezone, time in all_timezones.items():
             start_all_timezones.append(time)
 
+        template_name = f"{race_type}.tmpl"
+
         parsed_template = template.load_template_file(
-            "race.tmpl",
+            template_name,
             race_name=race_name,
             race_date_range_string=race_date_range_string,
             race_location=race_location,
@@ -53,7 +59,7 @@ class HaasBotController(object):
             start_all_timezones=start_all_timezones,
         )
 
-        title = f"Test HaasBot Race Thread: {self.today}"
+        title = f"Haas {race_name.title()} {race_type.capitalize()} Discussion"
         s = reddit.subreddit("HaasTeamBot").submit(
             title=title, selftext=parsed_template
         )

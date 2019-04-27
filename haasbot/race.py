@@ -19,6 +19,7 @@ class Race(object):
         for race in races["Races"]:
             race_date = maya.parse(race["date"])
             if now < race_date:
+                # Break out of the loop and set next_race when we find the first 'future' race
                 next_race = race
                 break
             else:
@@ -39,6 +40,7 @@ class Race(object):
         self.race_datetime = race_datetime
 
     def race_weekend_range(self):
+        """Returns a string representing the full date range of a race weekend"""
         # We know a race weekend always (I think) starts two days before the race date
         race_weekend_start = self.race_datetime.subtract(days=2)
         start_string = race_weekend_start.datetime().strftime("%a %d %h")
@@ -46,6 +48,7 @@ class Race(object):
         return f"{start_string} - {end_string}"
 
     def get_start_all_timezones(self):
+        """Returns a dictionary of timezones and the race time in that local timezone"""
         timezones = {
             "utc": "UTC",
             "est": "US/Eastern",
@@ -54,7 +57,8 @@ class Race(object):
             "pst": "US/Pacific",
         }
 
-        # Empty dict we will populate with the race's start time for each time-zone we want
+        # Empty dict we will populate with the race's start time for each time-zone we want.
+        # We are using an "OrderedDict" here to make things easier on the printing side.
         start_all_timezones = OrderedDict()
 
         for short_name, full_name in timezones.items():

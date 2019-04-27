@@ -179,24 +179,24 @@
         },
         "pytzdata": {
             "hashes": [
-                "sha256:9626e42fd9df77b16aedbd909d1e5fda839be47966adb7089b990f3452c45dd8",
-                "sha256:dddaaf4f1717820a6fdcac94057e03c1a15b3829a44d9eaf19988917977db408"
+                "sha256:778db26940e38cf6547d6574f49375570f7d697970461de531c56cf8400958a3",
+                "sha256:f0469062f799c66480fcc7eae69a8270dc83f0e6522c0e70db882d6bd708d378"
             ],
-            "version": "==2018.9"
+            "version": "==2019.1"
         },
         "regex": {
             "hashes": [
-                "sha256:188f609c651bd224c10e5beb2781e0d714376ce84d0d552d16bc75dec23bb78d",
-                "sha256:5e570e3ab3860c622c752b0ff55af911ffe8f4915f4eb60878063c3698948901",
-                "sha256:63f7a7d12dcc779eb287557908bb0cee8a337b50cb5f1586f180b0f8260e94e8",
-                "sha256:6688a646897928f1cbe20fa26061f98688018d70eba01955d0e2377a45b033a1",
-                "sha256:e0674fb8e99bd0cc7a20e2059bf7d3acba20bf3301c1af34b0f80c0a2c8cbdfa",
-                "sha256:f886fda59a523718f680670fc7fbe786adaa6fc8e7a1f85cf6c0e2da605a7035",
-                "sha256:fa6eddebf46f75bca468c803051ccb99bbb503ee62afe60ecf6bcdcec003c101",
-                "sha256:fee9e80db9e6c9b62011cc340340d6d9bf8653719144210ee904f03c27a9dd48",
-                "sha256:ffce514a0f722de5de6206a02893bbf0fd91c79ef4ab9f4d86aacfe8cf263216"
+                "sha256:16da2b2ae017640451cb2521aec08b72064b57a3873ac44f88368752d4256a1d",
+                "sha256:2ab56d6d8f3ca315abab1db223b124e12829e4f99cffc77e72c2f162c989bce0",
+                "sha256:30aab8bc2a17080ceefcc4ec942fa3830695a10575dc4eec348499acdd373c5b",
+                "sha256:6d583cd73ae6a9b515924b7c1e2e911b512c49ca93d7ea18f14913f1aa15c278",
+                "sha256:866659351440384e476d3b8a9cb0b7346f9d494435e3b712c7e79847935c60af",
+                "sha256:a17148a0f4e8c5c367d079d408b559b329f1ad74848002158f9647a88f9c1c14",
+                "sha256:ba5229bce84573798d9506080a92d365baef6e0716cafb46fb61238fdd588ae5",
+                "sha256:e7e54e04c4cc8d5dbacb0ad8384f39b3d55573a7890769dec5793309e1271207",
+                "sha256:e8332b1b44c8087ecc57b09e7170929cd52fac0728d5f8d5c3147b9c7faf8f49"
             ],
-            "version": "==2019.4.9"
+            "version": "==2019.4.10"
         },
         "requests": {
             "hashes": [

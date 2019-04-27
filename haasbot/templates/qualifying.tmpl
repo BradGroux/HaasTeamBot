@@ -1,0 +1,19 @@
+|{{ race_name }} Qualifying|
+|:-:|
+|{{ race_date_range_string }}|
+|{{ race_location }}|
+
+# [SESSION TIMES](http://f1calendar.com/)
+
+| Session | UTC | EST | CST | MST | PST |
+|-:|-:|-:|:-|-:|-:|
+| Grand Prix | {% for time in start_all_timezones %} {{ time }} | {% endfor %}
+
+---
+
+## [{{ circuit_name | upper}}]({{ race_url }})
+
+---
+
+
+Please keep the conversation civil, and pass on word of the /r/HaasF1Team subreddit to your friends and fellow fans!
