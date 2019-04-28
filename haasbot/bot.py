@@ -59,8 +59,6 @@ class HaasBotController(object):
             start_all_timezones=start_all_timezones,
         )
 
-        title = f"Haas {race_name.title()} {race_type.capitalize()} Discussion"
-        s = reddit.subreddit("HaasTeamBot").submit(
-            title=title, selftext=parsed_template
-        )
+        title = f"{self.constructor_name.title()} {race_name.title()} {race_type.title()} Discussion"
+        s = reddit.subreddit("haasf1team").submit(title=title, selftext=parsed_template)
         return s.url

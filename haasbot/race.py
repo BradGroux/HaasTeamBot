@@ -18,7 +18,7 @@ class Race(object):
 
         for race in races["Races"]:
             race_date = maya.parse(race["date"])
-            if now < race_date:
+            if now.date <= race_date.date:
                 # Break out of the loop and set next_race when we find the first 'future' race
                 next_race = race
                 break
